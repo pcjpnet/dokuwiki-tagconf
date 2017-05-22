@@ -1,0 +1,7 @@
+base   tagconf
+author pcjpnet
+email  webmaster _a_t_ pc-jp.net
+date   2017-05-22
+name   tagconf plugin
+desc   Advanced HTML tag setting plugin
+url    https://github.com/pcjpnet/dokuwiki-tagconf
