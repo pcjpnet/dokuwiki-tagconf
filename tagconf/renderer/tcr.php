@@ -31,7 +31,7 @@ function cdata($text) {
     }
 }
 
-function externallink($url, $name = NULL) {
+function externallink($url, $name = NULL, $returnonly = false) {
     if ($this->getConf('use_link_extern_prefix')) {
         $name = ($name) ? $name : "$url";
         if ($this->getConf('use_internal_redirector_for_extern')) {
@@ -41,7 +41,7 @@ function externallink($url, $name = NULL) {
             $url = $this->getConf('link_extern_prefix') . urlencode($url);
         }
     }
-    return parent::externallink($url, $name);
+    return parent::externallink($url, $name, $returnonly);
 }
 
 }
